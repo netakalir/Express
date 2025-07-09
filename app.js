@@ -1,11 +1,11 @@
 import express from "express";
-import greetRouter from "./routes/greet.js";
-import userRouter from "./routes/users.js"
+import configRoutes from "./routes/configRoutes.js";
+
 
 const app = express();
+app.use(express.json());
+configRoutes(app);
 
-app.use(greetRouter)
-app.use(userRouter)
 
 
 

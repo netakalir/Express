@@ -10,9 +10,9 @@ import {
 
 const router = express.Router();
 
-router.use(express.json());
 
-let users = [{ id: 1, name: "neta" }];
+
+
 
 router.get("/getAllUsers",getAllUsers)
 router.get("/getUserById/:id",getUserById)
